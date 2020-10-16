@@ -1,21 +1,21 @@
 {
-  "deviceType": "green-thumb",
+  "deviceType": "cosmic-interval",
   "name": "01",
   "arcPeriod": 60000,
-  "timeStamp": 1584283380359,
-  "lastArchive": 1584283329231,
-  "temperature1": {
+  "timeStamp": 1579620007645,
+  "lastArchive": 1579619979487,
+  "interval": {
     "action": "reading",
     "type": "scalar",
-    "value": 20,
-    "unit": "C",
+    "value": 2177,
+    "unit": "unit",
     "alarm": {
       "value": 0,
       "limits": {
-        "lolo": -1,
+        "lolo": 0,
         "low": 1,
-        "high": 100,
-        "hihi": 101
+        "high": 20000,
+        "hihi": 30000
       },
       "notify": {
         "name": "",
@@ -24,18 +24,18 @@
       }
     }
   },
-  "temperature2": {
+  "avgInterval": {
     "action": "reading",
     "type": "scalar",
-    "value": 18.8,
-    "unit": "C",
+    "value": 2177,
+    "unit": "unit",
     "alarm": {
       "value": 0,
       "limits": {
         "lolo": 0,
         "low": 1,
-        "high": 100,
-        "hihi": 101
+        "high": 20000,
+        "hihi": 30000
       },
       "notify": {
         "name": "",
@@ -44,58 +44,18 @@
       }
     }
   },
-  "temperature3": {
+  "cpm": {
     "action": "reading",
     "type": "scalar",
-    "value": -0.1,
-    "unit": "C",
-    "alarm": {
-      "value": 3,
-      "limits": {
-        "lolo": 0,
-        "low": 1,
-        "high": 100,
-        "hihi": 101
-      },
-      "notify": {
-        "name": "",
-        "number": "",
-        "time": 0
-      }
-    }
-  },
-  "humidity": {
-    "action": "reading",
-    "type": "scalar",
-    "value": 40,
-    "unit": "%",
+    "value": 27.6,
+    "unit": "unit",
     "alarm": {
       "value": 0,
       "limits": {
         "lolo": 0,
         "low": 1,
-        "high": 100,
-        "hihi": 101
-      },
-      "notify": {
-        "name": "",
-        "number": "",
-        "time": 0
-      }
-    }
-  },
-  "moisture": {
-    "action": "reading",
-    "type": "scalar",
-    "value": 10.2,
-    "unit": "%",
-    "alarm": {
-      "value": 0,
-      "limits": {
-        "lolo": 0,
-        "low": 1,
-        "high": 100,
-        "hihi": 101
+        "high": 20000,
+        "hihi": 30000
       },
       "notify": {
         "name": "",
@@ -107,7 +67,7 @@
   "linkQuality": {
     "action": "reading",
     "type": "scalar",
-    "value": 70,
+    "value": 49,
     "unit": "/70",
     "alarm": {
       "value": 0,
@@ -127,10 +87,10 @@
   "signalLevel": {
     "action": "reading",
     "type": "scalar",
-    "value": -40,
+    "value": -61,
     "unit": "dBm",
     "alarm": {
-      "value": 0,
+      "value": 1,
       "limits": {
         "lolo": -70,
         "low": -60,
@@ -144,18 +104,18 @@
       }
     }
   },
-  "loopDelay": {
+  "nsamples": {
     "action": "setting",
     "type": "scalar",
-    "value": 1000,
+    "value": 50,
     "unit": "unit",
     "alarm": {
       "value": 0,
       "limits": {
-        "lolo": 0,
-        "low": 0,
-        "high": 20000,
-        "hihi": 30000
+        "lolo": 1,
+        "low": 2,
+        "high": 2000,
+        "hihi": 3000
       },
       "notify": {
         "name": "",
